@@ -25,7 +25,4 @@
     (safely #(mode.update dt set-mode))))
 
 (fn lovr.keypressed [key]
-  (if (and (lovr.keyboard.isDown "lctrl" "rctrl" "capslock") (= key "q"))
-      (lovr.quit)
-      ;; add what each keypress should do in each mode
-      (safely #(mode.keypressed key set-mode))))
+  (safely #(mode.keypressed key set-mode)))
