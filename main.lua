@@ -2,7 +2,6 @@
 fennel = require("lib.fennel")
 table.insert(package.loaders, fennel.make_searcher({correlate=true}))
 pp = function(x) print(fennel.view(x)) end
-lume = require("lib.lume")
 
 local make_lovr_searcher = function(env)
    return function(module_name)

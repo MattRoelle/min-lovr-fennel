@@ -11,14 +11,14 @@
 Press space to return to the previous mode after reloading in the repl.")
 
 (fn draw []
-  (lovr.graphics.print explanation 0 1.7 -3 0.5)
-  (lovr.graphics.print state.traceback 0 2.7 -3 0.5))
+  (lovr.graphics.print explanation 0 1.7 -3 0.1)
+  (lovr.graphics.print state.msg 0 1.3 -3 0.1)
+  (lovr.graphics.print state.traceback 0 0.7 -3 0.1))
 
 (fn keypressed [key set-mode]
   (match key
     :escape (lovr.quit)
     :space (set-mode state.old-mode)))
-
 (fn activate [old-mode msg traceback]
   (print msg)
   (print traceback)

@@ -1,5 +1,5 @@
 (local fennel (require :lib.fennel))
-(local repl (require :lib.stdio))
+(local repl (require :lib.lovr-stdio-repl))
 
 ;; set the first mode
 (var (mode mode-name) nil)
