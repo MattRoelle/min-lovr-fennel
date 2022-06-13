@@ -4,7 +4,7 @@ Ported from this LOVE2D starter kit: https://gitlab.com/alexjgriffith/min-love2d
 
 This repo serves as both a template LÖVR project and the home of the lovr-stdio-repl library in the lib folder. 
 
-## Getting Startefd
+## Getting Started
 
 To get started, just run `lovr` against this directory and a REPL will be opened over STDIO
 
